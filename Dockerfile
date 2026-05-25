@@ -7,4 +7,6 @@ ENV PORT=8080
 
 EXPOSE 8080
 
-CMD node-red -p 8080 -a 0.0.0.0
+ENTRYPOINT ["node-red"]
+
+CMD ["-p", "8080", "-a", "0.0.0.0", "--userDir", "/data"]
