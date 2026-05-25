@@ -7,4 +7,4 @@ ENV PORT=8080
 
 EXPOSE 8080
 
-CMD ["npm", "start", "--", "--userDir", "/data", "-p", "8080", "-a", "0.0.0.0"]
+CMD node-red -p 8080 -a 0.0.0.0
